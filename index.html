@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://kit.fontawesome.com/4048ab28bc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4048ab28bc.js" crossorigin="anonymous"></script>
+	<style>
+
+		/* Set display to none for image*/
+		#image {
+			display: none;
+		}
+		iframe{
+			margin: auto;
+		}
+
+
+		@media screen and (max-width: 820px) {
+
+ #image{
+	width: 100%;
+ }
+}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1>GeeksforGeeks</h1>
+		<h3>Click on the button to see image</h3>
+
+		<!-- Add id to image -->
+		<iframe id="image" src="index11.html" height="700px"
+        style="scroll-behavior:no-scroll ;"
+        width="30%"
+
+			></iframe>
+	</div>
+
+	<button type="button"
+		onclick="show()" id="btnID">
+		<i class="fa-solid fa-magnifying-glass"></i>
+	</button>
+
+	<script>
+		function show() {
+
+			/* Access image by id and change
+			the display property to block*/
+			document.getElementById('image')
+					.style.display = "block";
+
+			document.getElementById('btnID')
+					.style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
